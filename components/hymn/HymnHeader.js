@@ -5,7 +5,7 @@ export default function HymnHeader() {
   return (
     <View style={styles.header}>
       <View style={styles.logoBox}>
-        <Ionicons name="book-outline" size={32} color="#b97714" /> 
+        <Ionicons  name="musical-notes-outline" size={32} color="#b97714" /> 
       </View>
 
       <View>
@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 18,
     marginBottom: 26,
   },
 

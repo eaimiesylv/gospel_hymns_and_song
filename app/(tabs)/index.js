@@ -52,10 +52,7 @@ export default function HymnScreen() {
                 onChangeText={setSearchText}
               />
 
-              {/* <HymnFilters
-                activeFilter={activeFilter}
-                onChange={setActiveFilter}
-              /> */}
+              
             </>
           }
           renderItem={({ item }) => <HymnCard hymn={item} />}
