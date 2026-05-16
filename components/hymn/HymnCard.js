@@ -4,9 +4,9 @@ import { Ionicons } from '@expo/vector-icons';
 export default function HymnCard({ hymn }) {
   return (
     <Pressable style={styles.card}>
-      <View style={styles.iconBox}>
+      {/* <View style={styles.iconBox}>
         <Ionicons name="reader-outline" size={30} color="#0f351f" />
-      </View>
+      </View> */}
 
       <Text style={styles.number}>{hymn.id}</Text>
 
@@ -15,9 +15,7 @@ export default function HymnCard({ hymn }) {
           {hymn.title}
         </Text>
 
-        <Text style={styles.yorubaTitle} numberOfLines={1}>
-          {hymn.yorubaTitle}
-        </Text>
+       
 
         <Text style={styles.preview} numberOfLines={1}>
           {hymn.preview}
@@ -25,7 +23,7 @@ export default function HymnCard({ hymn }) {
       </View>
 
       <View style={styles.actions}>
-        <Ionicons name="bookmark-outline" size={27} color="#a46000" />
+      
         <Ionicons name="chevron-forward" size={27} color="#737985" />
       </View>
     </Pressable>
@@ -34,7 +32,7 @@ export default function HymnCard({ hymn }) {
 
 const styles = StyleSheet.create({
   card: {
-    minHeight: 110,
+    minHeight: 80,
     borderRadius: 16,
     borderWidth: 1,
     borderColor: '#eee4d8',
@@ -68,22 +66,11 @@ const styles = StyleSheet.create({
 
   title: {
     color: '#0f351f',
-    fontSize: 25,
+    fontSize: 15,
     fontWeight: '700',
     marginBottom: 3,
   },
 
-  yorubaTitle: {
-    color: '#a46000',
-    fontSize: 21,
-    fontWeight: '600',
-    marginBottom: 6,
-  },
-
-  preview: {
-    color: '#5f6470',
-    fontSize: 16,
-  },
 
   actions: {
     flexDirection: 'row',

@@ -5,18 +5,12 @@ export default function HymnHeader() {
   return (
     <View style={styles.header}>
       <View style={styles.logoBox}>
-        <Ionicons name="book-outline" size={32} color="#b97714" />
-        <Ionicons
-          name="add-outline"
-          size={34}
-          color="#c9861f"
-          style={styles.cross}
-        />
+        <Ionicons name="book-outline" size={32} color="#b97714" /> 
       </View>
 
       <View>
-        <Text style={styles.title}>Text Songs</Text>
-        <Text style={styles.subtitle}>Read hymns in English or Yorùbá</Text>
+        <Text style={styles.title}>Gospel Hymns & Songs</Text>
+       
       </View>
     </View>
   );
@@ -34,26 +28,18 @@ const styles = StyleSheet.create({
     width: 64,
     height: 64,
     alignItems: 'center',
-    justifyContent: 'center',
+   justifyContent: 'center',
     position: 'relative',
   },
 
-  cross: {
-    position: 'absolute',
-    top: -6,
-    left: 14,
-  },
+ 
 
   title: {
     color: '#0f351f',
-    fontSize: 36,
+    fontSize: 20,
     fontWeight: '700',
     letterSpacing: -0.5,
   },
 
-  subtitle: {
-    color: '#5f6470',
-    fontSize: 17,
-    marginTop: 4,
-  },
+
 });

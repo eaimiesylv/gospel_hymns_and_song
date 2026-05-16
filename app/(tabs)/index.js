@@ -7,7 +7,6 @@ import hymns from '../../data/hymns.json';
 import HymnHeader from '../../components/hymn/HymnHeader';
 import LanguageSwitch from '../../components/hymn/LanguageSwitch';
 import SearchBox from '../../components/hymn/SearchBox';
-import HymnFilters from '../../components/hymn/HymnFilters';
 import HymnCard from '../../components/hymn/HymnCard';
 
 export default function HymnScreen() {
@@ -40,22 +39,23 @@ export default function HymnScreen() {
           showsVerticalScrollIndicator={false}
           ListHeaderComponent={
             <>
-              <HymnHeader />
+             
 
               <LanguageSwitch
                 activeLanguage={activeLanguage}
                 onChange={setActiveLanguage}
               />
+               <HymnHeader />
 
               <SearchBox
                 value={searchText}
                 onChangeText={setSearchText}
               />
 
-              <HymnFilters
+              {/* <HymnFilters
                 activeFilter={activeFilter}
                 onChange={setActiveFilter}
-              />
+              /> */}
             </>
           }
           renderItem={({ item }) => <HymnCard hymn={item} />}
