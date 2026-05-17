@@ -1,20 +1,142 @@
 [
   {
     "id": 1,
-    "title": "To God Be the Glory",
-    "yorubaTitle": "Fún Ọlọ́run ni Ògo",
-    "preview": "To God be the glory, great things He hath done..."
+    "slug": "to-god-be-the-glory",
+    "number": 1,
+    "languages": {
+      "english": {
+        "title": "To God Be the Glory",
+        "chorus": {
+          "label": "Refrain",
+          "content": "Praise the Lord, praise the Lord,\nlet the earth hear His voice!\nPraise the Lord, praise the Lord,\nlet the people rejoice!\nO come to the Father through Jesus the Son,\nand give Him the glory, great things He hath done."
+        },
+        "verses": [
+          {
+            "verseNumber": 1,
+            "content": "To God be the glory, great things He hath done,\nso loved He the world that He gave us His Son,\nwho yielded His life an atonement for sin,\nand opened the life-gate that all may go in."
+          },
+          {
+            "verseNumber": 2,
+            "content": "O perfect redemption, the purchase of blood,\nto ev'ry believer the promise of God;\nthe vilest offender who truly believes,\nthat moment from Jesus a pardon receives."
+          },
+          {
+            "verseNumber": 3,
+            "content": "Great things He hath taught us, great things He hath done,\nand great our rejoicing through Jesus the Son;\nbut purer, and higher, and greater will be\nour wonder, our transport, when Jesus we see."
+          }
+        ]
+      },
+      "yoruba": {
+        "title": "Fún Ọlọ́run ni Ògo",
+        "chorus": {
+          "label": "Ìpèdè",
+          "content": "Yìn Olúwa, yìn Olúwa,\nkí ayé gbọ́ ohùn Rẹ̀!\nYìn Olúwa, yìn Olúwa,\nkí àwọn ènìyàn yọ̀!\nẸ wá sọ́dọ̀ Baba nípasẹ̀ Jesu Ọmọ,\nkí ẹ sì fi ògo fún Un, ohun ńlá ni Ó ṣe."
+        },
+        "verses": [
+          {
+            "verseNumber": 1,
+            "content": "Fún Ọlọ́run ni ògo, ohun ńlá ni Ó ṣe,\nÓ fẹ́ ayé tó bẹ́ẹ̀ tí Ó fi Ọmọ Rẹ̀ fún wa,\nẸni tí Ó fi ẹ̀mí Rẹ̀ rúbọ fún ètùtù ẹ̀ṣẹ̀,\nÓ sì ṣí ẹnu-ọ̀nà ìyè sílẹ̀ kí gbogbo ènìyàn lè wọlé."
+          },
+          {
+            "verseNumber": 2,
+            "content": "Ìràpadà pípé, tí ẹ̀jẹ̀ Rẹ̀ rà,\nílérí Ọlọ́run fún gbogbo ẹni tí ó gbàgbọ́;\nẹlẹ́ṣẹ̀ tí ó buru jù, bí ó bá gbàgbọ́ tòótọ́,\nní àkókò náà ni Jesu yóò fi ìdáríjì fún un."
+          },
+          {
+            "verseNumber": 3,
+            "content": "Ohun ńlá ni Ó kọ́ wa, ohun ńlá ni Ó ṣe,\nayọ̀ wa sì pọ̀ nípasẹ̀ Jesu Ọmọ;\nṣùgbọ́n mímọ́ jù, gíga jù, àti ńlá jù ni yóò jẹ́\nìyanu àti ayọ̀ wa nígbà tí a bá rí Jesu."
+          }
+        ]
+      },
+      "igbo": {
+        "title": "Nye Chineke Otuto",
+        "chorus": {
+          "label": "Azịza",
+          "content": "Too Onyenweanyị, too Onyenweanyị,\nka ụwa nụ olu Ya!\nToo Onyenweanyị, too Onyenweanyị,\nka ndị mmadụ ṅụrịa!\nBịakwutenụ Nna site n’aka Jizọs Ọkpara,\nnyekwa Ya otuto, nnukwu ihe ka O meworo."
+        },
+        "verses": [
+          {
+            "verseNumber": 1,
+            "content": "Nye Chineke otuto, nnukwu ihe ka O meworo,\nO hụrụ ụwa n’anya nke ukwuu, O nyere anyị Ọkpara Ya,\nOnye nyere ndụ Ya ka ọ bụrụ mgbapụta maka mmehie,\nma meghee ọnụ ụzọ ndụ ka mmadụ niile nwee ike ịbanye."
+          },
+          {
+            "verseNumber": 2,
+            "content": "Mgbapụta zuru oke, nke e ji ọbara zụta,\nnkwa Chineke nyere onye ọ bụla kwere ekwe;\nonye mmehie kacha njọ, ma ọ bụrụ na o kwere n’eziokwu,\nn’oge ahụ ka ọ na-anata mgbaghara site n’aka Jizọs."
+          },
+          {
+            "verseNumber": 3,
+            "content": "Nnukwu ihe ka Ọ kụziiri anyị, nnukwu ihe ka Ọ meworo,\nanyị na-aṅụrịkwa ọṅụ nke ukwuu site n’aka Jizọs Ọkpara;\nma nke dị ọcha karị, dị elu karị, dịkwa ukwuu karị ga-abụ\nịtụnanya na ọṅụ anyị mgbe anyị ga-ahụ Jizọs."
+          }
+        ]
+      }
+    }
   },
   {
     "id": 2,
-    "title": "How Great Thou Art",
-    "yorubaTitle": "Olúwa Mi Tóbi",
-    "preview": "O Lord my God, when I in awesome wonder..."
-  },
-  {
-    "id": 3,
-    "title": "Blessed Assurance",
-    "yorubaTitle": "Ìdánilójú Ìbùkún",
-    "preview": "Blessed assurance, Jesus is mine..."
+    "slug": "blessed-assurance",
+    "number": 2,
+    "languages": {
+      "english": {
+        "title": "Blessed Assurance",
+        "chorus": {
+          "label": "Refrain",
+          "content": "This is my story, this is my song,\npraising my Savior all the day long;\nthis is my story, this is my song,\npraising my Savior all the day long."
+        },
+        "verses": [
+          {
+            "verseNumber": 1,
+            "content": "Blessed assurance, Jesus is mine!\nO, what a foretaste of glory divine!\nHeir of salvation, purchase of God,\nborn of His Spirit, washed in His blood."
+          },
+          {
+            "verseNumber": 2,
+            "content": "Perfect submission, perfect delight,\nvisions of rapture now burst on my sight;\nangels descending, bring from above\nechoes of mercy, whispers of love."
+          },
+          {
+            "verseNumber": 3,
+            "content": "Perfect submission, all is at rest,\nI in my Savior am happy and blest;\nwatching and waiting, looking above,\nfilled with His goodness, lost in His love."
+          }
+        ]
+      },
+      "yoruba": {
+        "title": "Ìdánilójú Ìbùkún",
+        "chorus": {
+          "label": "Ìpèdè",
+          "content": "Èyí ni ìtàn mi, èyí ni orin mi,\nní yíyin Olùgbàlà mi ní gbogbo ọjọ́;\nèyí ni ìtàn mi, èyí ni orin mi,\nní yíyin Olùgbàlà mi ní gbogbo ọjọ́."
+        },
+        "verses": [
+          {
+            "verseNumber": 1,
+            "content": "Ìdánilójú ìbùkún, Jesu jẹ́ ti mi!\nÌtọ́wo ògo Ọlọ́run ni èyí tó dára tó!\nAjogún ìgbàlà, ẹni tí Ọlọ́run rà,\nti a bí nípa Ẹ̀mí Rẹ̀, tí a sì wẹ̀ nínú ẹ̀jẹ̀ Rẹ̀."
+          },
+          {
+            "verseNumber": 2,
+            "content": "Ìtẹríba pípé, ayọ̀ pípé,\nìran ayọ̀ ọ̀run ń hàn gbangba sí mi;\náwọn angẹli ń sọ̀kalẹ̀, wọ́n mú láti òkè wá\nìró àánú àti ìròyìn ìfẹ́."
+          },
+          {
+            "verseNumber": 3,
+            "content": "Ìtẹríba pípé, ohun gbogbo wà ní ìsinmi,\n inú Olùgbàlà mi ni mo ti ní ayọ̀ àti ìbùkún;\nmo ń ṣọ́, mo sì ń dúró, mo ń wo òkè,\nmo kún fún oore Rẹ̀, mo sì sọnù nínú ìfẹ́ Rẹ̀."
+          }
+        ]
+      },
+      "igbo": {
+        "title": "Nkwenye Ngọzi",
+        "chorus": {
+          "label": "Azịza",
+          "content": "Nke a bụ akụkọ m, nke a bụ abụ m,\nịto Onye Nzọpụta m ụbọchị niile;\nnke a bụ akụkọ m, nke a bụ abụ m,\nịto Onye Nzọpụta m ụbọchị niile."
+        },
+        "verses": [
+          {
+            "verseNumber": 1,
+            "content": "Nkwenye ngọzi, Jizọs bụ nke m!\nLee ụdị ụtọ mbụ nke ebube Chineke!\nOnye nketa nke nzọpụta, onye Chineke zụtara,\namụrụ site n’ime Mmụọ Ya, sachapụtakwa n’ọbara Ya."
+          },
+          {
+            "verseNumber": 2,
+            "content": "Nrubeisi zuru oke, obi ụtọ zuru oke,\nọhụhụ nke ọṅụ eluigwe apụtawo n’ihu m;\nndị mmụọ ozi na-arịdata, na-eweta site n’elu\nụda ebere na nkwupụta ịhụnanya."
+          },
+          {
+            "verseNumber": 3,
+            "content": "Nrubeisi zuru oke, ihe niile dị n’udo,\nn’ime Onye Nzọpụta m ka m na-enwe obi ụtọ na ngọzi;\nna-ele anya ma na-eche, na-elekwasị anya n’elu,\njupụtara n’ịdị mma Ya, tufuru onwe m n’ịhụnanya Ya."
+          }
+        ]
+      }
+    }
   }
 ]

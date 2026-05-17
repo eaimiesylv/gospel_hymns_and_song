@@ -1,7 +1,15 @@
 import { View, Text, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default function HymnHeader() {
+export default function HymnHeader({ activeLanguage = 'english' }) {
+  const titles = {
+    english: 'Gospel Hymns & Songs',
+    yoruba: 'Orin Ìyìn àti Orin',
+    igbo: 'Abụ Èkè & Abụ',
+  };
+
+  const title = titles[activeLanguage] || titles.english;
+
   return (
     <View style={styles.header}>
       <View style={styles.logoBox}>
@@ -9,8 +17,7 @@ export default function HymnHeader() {
       </View>
 
       <View>
-        <Text style={styles.title}>Gospel Hymns & Songs</Text>
-       
+        <Text style={styles.title}>{title}</Text>
       </View>
     </View>
   );

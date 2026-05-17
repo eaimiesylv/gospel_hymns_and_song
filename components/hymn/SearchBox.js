@@ -1,7 +1,14 @@
 import { View, TextInput, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default function SearchBox({ value, onChangeText }) {
+export default function SearchBox({ value, onChangeText, activeLanguage = 'english' }) {
+  const placeholders = {
+    english: 'Search hymns',
+    yoruba: 'Wá orin',
+    igbo: 'Chọọ abụ',
+  };
+
+  const placeholder = placeholders[activeLanguage] || placeholders.english;
   return (
     <View style={styles.searchBox}>
       <Ionicons name="search-outline" size={30} color="#0f351f" />
@@ -9,7 +16,7 @@ export default function SearchBox({ value, onChangeText }) {
       <TextInput
         value={value}
         onChangeText={onChangeText}
-        placeholder="Search text songs"
+        placeholder={placeholder}
         placeholderTextColor="#7b7f89"
         style={styles.input}
       />

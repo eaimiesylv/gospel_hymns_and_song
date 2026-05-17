@@ -22,13 +22,16 @@ export default function HymnScreen() {
     }
 
     return hymns.filter((hymn) => {
-      return (
-        hymn.title.toLowerCase().includes(keyword) ||
-        hymn.yorubaTitle.toLowerCase().includes(keyword) ||
-        hymn.preview.toLowerCase().includes(keyword)
-      );
+      const langData = hymn.languages[activeLanguage] || hymn.languages['english'];
+      const title = (langData?.title || '').toLowerCase();
+      let chorusText = '';
+      if (langData?.chorus) {
+        chorusText = typeof langData.chorus === 'string' ? langData.chorus : (langData.chorus.content || '');
+      }
+      chorusText = chorusText.toLowerCase();
+      return title.includes(keyword) || chorusText.includes(keyword);
     });
-  }, [searchText]);
+  }, [searchText, activeLanguage]);
 
   return (
     <SafeAreaView style={styles.safeArea} edges={['top', 'left', 'right']}>
@@ -45,17 +48,18 @@ export default function HymnScreen() {
                 activeLanguage={activeLanguage}
                 onChange={setActiveLanguage}
               />
-               <HymnHeader />
+               <HymnHeader activeLanguage={activeLanguage} />
 
               <SearchBox
                 value={searchText}
                 onChangeText={setSearchText}
+                activeLanguage={activeLanguage}
               />
 
               
             </>
           }
-          renderItem={({ item }) => <HymnCard hymn={item} />}
+          renderItem={({ item }) => <HymnCard hymn={item} activeLanguage={activeLanguage} />}
           contentContainerStyle={styles.listContent}
         />
       </View>

@@ -1,24 +1,34 @@
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useRouter } from 'expo-router';
 
-export default function HymnCard({ hymn }) {
+export default function HymnCard({ hymn, activeLanguage = 'english' }) {
+  const router = useRouter();
+
+  const langData = hymn.languages?.[activeLanguage] || hymn.languages?.english || {};
+  const title = langData.title || hymn.slug || `#${hymn.id}`;
+  const preview = langData.verses && langData.verses.length > 0
+    ? langData.verses[0].content
+    : langData.chorus || '';
+
   return (
-    <Pressable style={styles.card}>
-      {/* <View style={styles.iconBox}>
-        <Ionicons name="reader-outline" size={30} color="#0f351f" />
-      </View> */}
+    <Pressable
+      style={styles.card}
+      onPress={() => router.push(`/${hymn.slug}?lang=${activeLanguage}`)}
+    >
+     
 
-      <Text style={styles.number}>{hymn.id}</Text>
+      <Text style={styles.number}>{hymn.number ?? hymn.id}</Text>
 
       <View style={styles.content}>
         <Text style={styles.title} numberOfLines={1}>
-          {hymn.title}
+          {title}
         </Text>
 
        
 
         <Text style={styles.preview} numberOfLines={1}>
-          {hymn.preview}
+          {preview}
         </Text>
       </View>
 
@@ -69,6 +79,11 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: '700',
     marginBottom: 3,
+  },
+
+  preview: {
+    color: '#6b7280',
+    fontSize: 13,
   },
 
 

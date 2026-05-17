@@ -36,6 +36,23 @@ export default function LanguageSwitch({ activeLanguage, onChange }) {
           Yorùbá
         </Text>
       </Pressable>
+
+      <Pressable
+        onPress={() => onChange('igbo')}
+        style={[
+          styles.option,
+          activeLanguage === 'igbo' && styles.activeOption,
+        ]}
+      >
+        <Text
+          style={[
+            styles.optionText,
+            activeLanguage === 'igbo' && styles.activeText,
+          ]}
+        >
+          Igbo
+        </Text>
+      </Pressable>
     </View>
   );
 }
